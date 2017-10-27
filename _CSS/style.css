@@ -1,0 +1,21 @@
+
+*{margin: 0px; padding: 0px;}
+
+body{
+	background-color: #aaa;
+}
+
+section{
+	text-align: center;
+}
+
+#content{
+	background-color: #fff;
+}
+
+.foto-user{
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+}
+
