@@ -1,17 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 
 *{margin: 0px; padding: 0px;}
 
 body{
-	background-color: #aaa;
+	font-family: 'Roboto', sans-serif;
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);	
+	/*background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);*/
+
 }
 
 section{
-	text-align: center;
+	text-align: center;	
 }
 
-#content{
-	background-color: #fff;
+p{
+	line-height: 2.5;
 }
+
+a{
+	text-decoration: none;
+	color: rgba(0,0,0,.5);
+}
+
+hr{
+	border: 1px solid rgba(0,0,0,.3);
+}
+
+/*_____________________________________________________________________________________________________________________________________*/
+
+/*---------------*
+ *     Home      *
+ *---------------*/
+#content{
+	color: #fff;
+	background-color: rgba(0,0,0,.2);
+	width: 40%;
+	display: table;
+	margin: 15% auto;
+	padding: 1em .1em;
+	border: solid 3px;
+	border-radius: 1em;
+	border-color: rgba(0,0,0,.2);
+}
+
+.formHome{
+	text-align: right;
+	margin-right: 32%;
+}
+
+.hrHome{
+	margin: 1% 25%; 
+}
+
+#user, #password{
+	border: solid 2px rgba(0,0,0,.3);
+	height: 1.8em;
+	background-color: rgba(0,0,0,.1);
+}
+
+.btnEnv {
+  padding: 0.6em 3.8em;
+  background: transparent;
+  border: 0.225em solid;
+  border-color: rgba(0,0,0,.5);
+  border-radius: 50px;
+  font-weight: 700;
+  color: rgba(0,0,0,.5);
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btnEnv:hover {
+  background-color: rgba(0,0,0,.2);
+  color: rgba(0,0,0,.6);
+  transition-duration: .35s;
+}  
+
+/*_____________________________________________________________________________________________________________________________________*/
+
+/*---------------*
+ *     User      *
+ *---------------*/
 
 .foto-user{
 	border-radius: 50%;
@@ -19,3 +91,53 @@ section{
 	height: 60px;
 }
 
+/*_____________________________________________________________________________________________________________________________________*/
+
+/*---------------*
+ *     Chat      *
+ *---------------*/
+
+
+.chat-i{
+	border-radius: 8px;
+	padding: 10px;
+	max-width: 80%;
+	background-color: #cc32fb;
+	box-shadow: #333 0px 0px 1px;
+	display: table;
+	margin: 20px;
+}
+
+.chat-you	{
+	border-radius: 8px;
+	padding: 10px;
+	max-width: 80%;
+	background-color: #EAEAEA;
+	box-shadow: #333 0px 0px 1px;
+	display: table;
+	margin: 20px;
+}
+
+#msg{
+	border: rgba(0,0,0,.3);
+	height: 2.3em;
+	width: 30%;
+	background-color: rgba(0,0,0,.1);	
+}
+
+.btnRang{
+	font-size: 1em;
+	width: 6%;
+	height: 2em;
+	border-radius: 15%;
+	border: solid rgba(0,0,0,.2);
+	font-weight: 900;
+	color: rgba(0,0,0,.5);
+	background-color: rgba(0,0,0,.1);
+}
+
+.btnRang:hover{
+	background-color: rgba(0,0,0,.3);
+}
+
+.emotes-size{width:20px; height:20px;}
