@@ -1,6 +1,6 @@
 <div id="content">
 	<?php 
-		$slc = mysqli_query("SELECT * FROM usuarios");
+		$slc = mysqli_query($con, "SELECT * FROM usuarios");
 		$acc = mysqli_num_rows($slc);
 
 		if ($acc <= 0) {
@@ -16,11 +16,13 @@
 
 	<tr>
 		<td><img src="<?php echo "$photo";?>" class="foto-user"></td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<td><strong><?php echo "$name";?></strong></td>
-		<td><a href="?page=chat&user=<?php echo $user ?>"></a>Start</td>
+		&nbsp;&nbsp;&nbsp;
+		<td><button class="btnEnv"><a href="?page=chat&user=<?php echo $user ?>">Start</a></button></td>
 	</tr>
 	<hr>
 
-	<?php }}?>
+	<?php ?>
 
 </div>

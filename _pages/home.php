@@ -1,15 +1,22 @@
 
 <div id="content">
+	<h1>Welcome to MyChat</h1>
+	<hr class="hrHome">
+	<br>
 
-	<form action="" method="POST" enctype="multipart/form-data">
+	<form action="" method="POST" enctype="multipart/form-data" class="formHome">
 		
-		<label>User</label>
-		<p><input type="text" name="user" id="user" placeholder="Username"></p>
+		<p>
+			<label>User: </label>
+			<input type="text" name="user" id="user" placeholder=" Username">
+		</p>
 
-		<label>Password</label>
-		<p><input type="password" name="password" id="password" placeholder="********"></p>
+		<p>
+			<label>Password: </label>
+			<input type="password" name="password" id="password" placeholder=" ********">
+		</p>
 
-		<p><input type="submit" name="enter" value="Enter"></p>
+		<p><input type="submit" name="enter" value="Enter" class="btnEnv"></p>
 		<input type="hidden" name="env" value="login" id="env">
 	</form>
 
@@ -22,7 +29,7 @@
 				echo "<code>Complete all fields</code>";
 			}else{
 				$query = "SELECT * FROM usuarios WHERE usuario = '$user' AND senha = '$pass'";
-				$result = mysqli_query($query);
+				$result = mysqli_query($con, $query);
 				$search = mysqli_num_rows($result);
 				$line = mysqli_fetch_assoc($result);
 
@@ -36,5 +43,5 @@
 			}
 		}
 	 ?>
-	
+
 </div>
