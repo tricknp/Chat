@@ -34,3 +34,9 @@
 	<script type="text/javascript" src="_javascript/"></script>
 </body>
 </html>
+
+<!-- < ?php if ($showName) {?>
+		<p>Welcome <code>
+			< ?php echo "$currentName"; ?>
+		</code></p>
+	< ?}?> -->	
