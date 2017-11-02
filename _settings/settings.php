@@ -5,8 +5,8 @@
 	$dbname = "chat";
 
 	//connection start
-	$con = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
-	mysql_select_db($dbname, $con);
+	$con = mysqli_connect($dbhost, $dbuser, $dbpass) or print(mysql_error());
+	mysqli_select_db($dbname, $con);
 
 	if (!$con) {
 		echo "Error: Database not found";
@@ -18,9 +18,9 @@
 	$globalHour = date("H:i");
 	$showName = false;
 
-	if (isset($_SESSION['dbuser']) && $_SESSION['dbuser'] != null) {
-		$currentName = $_SESSION['dbname'];
-		$currentUser = $_SESSION['dbuser'];
+	if (isset($_SESSION['user']) && $_SESSION['user'] != null) {
+		$currentName = $_SESSION['name'];
+		$currentUser = $_SESSION['user'];
 		$showName = true;
 	}
 
